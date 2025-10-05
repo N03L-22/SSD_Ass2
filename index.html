@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noel Alex Jacob — Portfolio</title>
+    <meta name="description" content="Noel Alex Jacob — M.Tech CSE at IIIT Hyderabad. Interests: ML/AI and theory." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg:#0b0d12;--card:#111520;--muted:#8ea3b0;--text:#e8eff6;--accent:#7dd3fc;--accent-2:#a78bfa;--chip:#1a2030;--ring:#2a3246;
+        }
+        @media (prefers-color-scheme: light){
+            :root{--bg:#f7f8fb;--card:#ffffff;--muted:#4b5563;--text:#0b1220;--accent:#0369a1;--accent-2:#6d28d9;--chip:#eef2ff;--ring:#dbe3f0;}
+        }
+        *{box-sizing:border-box}
+        html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+        a{color:var(--accent);text-decoration:none} a:hover{opacity:.9;text-decoration:underline}
+        .container{max-width:1100px;margin:0 auto;padding:24px}
+        .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;margin-top:8px}
+        @media(min-width:900px){.hero{grid-template-columns:280px 1fr}}
+        .card{background:var(--card);border:1px solid var(--ring);border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+        .pfp{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;border:1px solid var(--ring)}
+        .name{font-size:clamp(26px,4vw,40px);font-weight:800;margin:0 0 6px}
+        .subtitle{font-size:clamp(14px,2.3vw,18px);color:var(--muted);margin:0}
+        .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+        .chip{padding:8px 12px;background:var(--chip);border:1px solid var(--ring);border-radius:999px;font-size:14px}
+        .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+        .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--ring);background:transparent;color:var(--text);font-weight:600}
+        .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0b0d12;border:none}
+        .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+        @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+        h2.sec{font-size:22px;margin:0 0 12px}
+        .row{display:flex;gap:14px;align-items:flex-start}
+        .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2));margin-top:8px;flex:0 0 auto}
+        .muted{color:var(--muted)}
+        ul.clean{margin:8px 0 0 0;padding:0;list-style:none}
+        .skills{display:flex;flex-wrap:wrap;gap:10px}
+        .skill{padding:8px 10px;border-radius:10px;background:var(--chip);border:1px solid var(--ring);font-weight:600}
+        footer{opacity:.8;font-size:13px;margin:28px 0 8px;text-align:center}
+        .sr{position:absolute;left:-9999px}
+    </style>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Person",
+            "name":"Noel Alex Jacob",
+            "sameAs":["https://www.linkedin.com/in/naj98/"],
+            "alumniOf":[
+                {"@type":"CollegeOrUniversity","name":"International Institute of Information Technology, Hyderabad"},
+                {"@type":"CollegeOrUniversity","name":"National Institute of Technology Karnataka"}
+            ],
+            "jobTitle":"Student, M.Tech CSE",
+            "description":"M.Tech CSE @ IIIT Hyderabad. Interests: ML/AI and theory."
+        }
+    </script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="container">
+    <section class="hero">
+        <div class="card">
+            <img class="pfp" src="./photo.jpeg" alt="Portrait of Noel Alex Jacob">
+        </div>
+        <div class="card">
+            <h1 class="name">Noel Alex Jacob</h1>
+            <p class="subtitle">M.Tech in Computer Science — IIIT Hyderabad</p>
+            <div class="chips">
+                <span class="chip">ML/AI & Theory</span>
+                <span class="chip">C++</span>
+                <span class="chip">Problem Solving</span>
+                <span class="chip">Web (HTML/CSS/JS)</span>
+                <span class="chip">Age: 27</span>
+            </div>
+            <div class="cta">
+                <a class="btn primary" href="mailto:noelalexdnn@gmail.com">Contact Me</a>
+                <a class="btn" href="https://www.linkedin.com/in/naj98/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <!-- Add GitHub if you want -->
+                <!-- <a class="btn" href="https://github.com/<your-username>" target="_blank" rel="noreferrer">GitHub</a> -->
+            </div>
+            <div style="margin-top:16px">
+                <p>
+                    I’m a graduate student at IIIT Hyderabad focusing on machine learning, AI, and theoretical CS.
+                    I enjoy building clean systems, writing modern C++, and turning ideas into reliable software.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main id="main" class="grid">
+        <!-- Education -->
+        <section class="card">
+            <h2 class="sec">Education</h2>
+            <div class="row">
+                <span class="dot"></span>
+                <div>
+                    <strong>International Institute of Information Technology, Hyderabad</strong>
+                    <div class="muted">M.Tech — Computer Science</div>
+                    <!-- Optionally add: <div class="muted">2024 – 2026 (expected)</div> -->
+                </div>
+            </div>
+            <div class="row" style="margin-top:12px">
+                <span class="dot"></span>
+                <div>
+                    <strong>National Institute of Technology Karnataka (NITK)</strong>
+                    <div class="muted">B.Tech — Electronics & Communication Engineering</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section class="card">
+            <h2 class="sec">Skills</h2>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Data Structures & Algorithms</span>
+                <span class="skill">Python</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">Git</span>
+                <span class="skill">Linux</span>
+                <span class="skill">Problem Solving</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="card">
+            <h2 class="sec">Selected Work</h2>
+            <ul class="clean">
+                <li><strong>Personal Website</strong> — This page, built as a clean, single-file site for GitHub Pages.</li>
+                <li><strong>Course Projects</strong> — Systems development & ML experiments (details on request).</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="card">
+            <h2 class="sec">Get in touch</h2>
+            <p>Looking for collaborations in ML/AI and systems. Prefer concise emails.</p>
+            <p><a href="mailto:noelalexdnn@gmail.com">noelalexdnn@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        © <span id="y"></span> Noel Alex Jacob · <a href="https://www.linkedin.com/in/naj98/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
